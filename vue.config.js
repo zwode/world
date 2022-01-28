@@ -1,3 +1,11 @@
 module.exports = {
-  runtimeCompiler: true
+	runtimeCompiler: true,
+	css: {
+      loaderOptions: {
+        scss: {
+          prependData: '@import "@/assets/css/main.scss";'
+        }
+      },
+      extract: false
+    }
 }

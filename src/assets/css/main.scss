@@ -1,0 +1,22 @@
+@import'~bootstrap/dist/css/bootstrap.css';
+
+
+.card {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+a {
+	-webkit-transition: all 0.3s ease;;
+	-moz-transition: all 0.3s ease;;
+	-o-transition: all 0.3s ease;;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+div {
+	-webkit-transition: all 0.3s ease;;
+	-moz-transition: all 0.3s ease;;
+	-o-transition: all 0.3s ease;;
+	transition: all 0.3s ease;
+}
