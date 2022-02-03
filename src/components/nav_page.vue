@@ -1,20 +1,24 @@
 <template>
 	<div class="nav">
 		<div class="container d-flex justify-content-between">
-			<a href="/" class="me align-self-center">
-				Dautov Abulhair
-			</a>
-			<div class="d-flex">
-				<a href="#project" class="nav_link">
-					My project
+			<div class="w-25 align-self-center">
+				<a href="/" class="me">
+					Dautov Abulhair
 				</a>
+			</div>
+			<div class="d-flex">
+				<router-link to="project" class="nav_link">
+					My project
+				</router-link>
 				<a href="#experience" class="nav_link">
 					Experience
 				</a>
 			</div>
-			<a href="#request" class="request align-self-center">
-				Project request
-			</a>
+			<div class="w-25 align-self-center">
+				<a href="#request" class="request">
+					Project request
+				</a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -28,7 +32,8 @@ export default {
 </script>
 
 <style scoped>
-
+	.nav {
+	}
 	a {
 		margin: 0 20px;
 		color: #fff;
@@ -39,6 +44,7 @@ export default {
 	a:hover	{
 		color:#fff;
 		background: gray;
+		cursor: none;
 	}
 
 	a:active {
@@ -64,6 +70,9 @@ export default {
 		background-color: rgba(29, 29, 31, 0.7);
 		border-color: #3d3d3d;
 		padding: 10px 0px;
+		z-index: 10000;
 	}
+
+
 
 </style>

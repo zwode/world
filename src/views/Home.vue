@@ -1,18 +1,18 @@
 <template>
 	<div class="home container">
-		<Welcome msg="Welcome to Your Vue.js App" class="mb-2"/>
+		<main_banner></main_banner>
 	</div>
 </template>
 
 <script>
 
-import Welcome from '@/components/Welcome.vue';
+import main_banner from '@/components/main_banner.vue';
 import axios from 'axios';
 
 export default {
 	name: 'Home',
 	components: {
-		Welcome,
+		main_banner,
 	},
 	data() {
 		return {
