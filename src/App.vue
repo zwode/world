@@ -1,5 +1,5 @@
 <template>
-	<div id="nav">
+	<div id="nav" class="bg-gradient">
 		<nav_page />
 	</div>
 	<router-view/>
