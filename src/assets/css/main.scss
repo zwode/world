@@ -4,6 +4,15 @@
 .card {
 	max-width: 400px;
 	margin: 0 auto;
+	background: #666666;
+}
+
+.nav_link {
+	font-size: 16px;
+}
+.link_active {
+	color:#fff;
+	background: gray;
 }
 
 .hv-100 {
@@ -24,10 +33,6 @@ body {
 
 a {
 	text-decoration: none;
-}
-
-.card {
-	background: gray;
 }
 
 .bg-gradient {

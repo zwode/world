@@ -2,17 +2,17 @@
 	<div class="nav">
 		<div class="container d-flex justify-content-between">
 			<div class="w-25 align-self-center">
-				<a href="/" class="me">
+				<router-link to="/" class="me" :class="{ 'link_active': this.$route?.name === 'Home' }">
 					Dautov Abulhair
-				</a>
+				</router-link>
 			</div>
 			<div class="d-flex">
-				<router-link to="project" class="nav_link">
+				<router-link to="project" class="nav_link" :class="{ 'link_active': this.$route?.name === 'Project' }">
 					My project
 				</router-link>
-				<a href="#experience" class="nav_link">
+				<router-link to="experience" class="nav_link">
 					Experience
-				</a>
+				</router-link>
 			</div>
 			<div class="w-25 align-self-center">
 				<a href="#request" class="request">
@@ -26,7 +26,14 @@
 <script>
 
 export default {
-
+  methods: {
+    checkRoute () {
+      console.log(this.$route)
+    }
+  },
+  mounted() {
+    console.log(this.$route)
+  }
 }
 
 </script>
@@ -44,7 +51,6 @@ export default {
 	a:hover	{
 		color:#fff;
 		background: gray;
-		cursor: none;
 	}
 
 	a:active {
@@ -60,10 +66,6 @@ export default {
 	.request {
 		font-size: 18px;
 		font-weight: 600;
-	}
-
-	.nav_link {
-		font-size: 16px;
 	}
 
 	.nav {
